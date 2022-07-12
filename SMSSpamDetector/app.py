@@ -4,7 +4,7 @@ import pickle
 
 app = Flask((__name__))
 model = pickle.load(open('modelll.pkl', 'rb'))
-cv=pickle.load(open('cv.pkl','rb'))
+cv=pickle.load(open('cv1.pkl','rb'))
 dic={1:'SPAM',0:'NOT SPAM'}
 @app.route('/')
 def home():
